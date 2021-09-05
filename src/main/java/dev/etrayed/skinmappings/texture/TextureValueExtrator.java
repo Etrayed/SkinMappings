@@ -23,10 +23,4 @@ public final class TextureValueExtrator {
     public static TextureValue extract(String input) {
         return GSON.fromJson(input, TextureValue.class);
     }
-
-    public static void main(String[] args) {
-        TextureValue value = extractBase64("ewogICJ0aW1lc3RhbXAiIDogMTYzMDgzNTEzMTg5MiwKICAicHJvZmlsZUlkIiA6ICIwOTVkZDFkZTQ4MzM0ZjMwYTgzMTEzZGU4NGJjNGJjZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJFdHJheWVkIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2MyZTMxNDcxYzQzZDQzMmIzN2EwOWMyMTA2Njg1ZjA1MTBmMWYwNDk2YTMxODNiMzVlNWY4M2E5Yzc0NDAxNzEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==");
-
-        System.out.println(value);
-    }
 }
